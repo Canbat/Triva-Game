@@ -1,6 +1,5 @@
 var panel = $("#quiz-area");
 
-// Question set
 var questions = [{
   question: "What was the Emperor Dalek's first sentence ?",
   answers: ["I am the god of all Daleks!", "Patience my breathren!", "They survived through me!", "Purify the Earth with fire!"],
@@ -35,7 +34,6 @@ var questions = [{
   correctAnswer: "Captain Jack Harkness in 'Boom Town'"
 }];
 
-// Variable that will hold the setInterval
 var timer;
 
 var game = {
@@ -161,8 +159,6 @@ var game = {
     panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
   }
 };
-
-// CLICK EVENTS
 
 $(document).on("click", "#start", function() {
   game.start();
