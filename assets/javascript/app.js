@@ -153,7 +153,7 @@ var game = {
 
     $("#sub-wrapper h2").remove();
 
-    panel.html("<h2>All Done!</h2>");
+    panel.html("<h2>It’s the end. But the moment has been prepared for!</h2>");
     panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
     panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
     panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
